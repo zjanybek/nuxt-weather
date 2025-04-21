@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'base/null';
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+
+  .lock & {
+    overflow: hidden;
+    touch-action: none;
+  }
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  > main {
+    flex: 1 1 auto;
+  }
+}
