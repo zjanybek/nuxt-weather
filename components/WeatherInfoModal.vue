@@ -25,7 +25,8 @@
         </div>
       </div>
     </div>
-    <div v-if="isLoading" class="p-4 text-center text-gray-600">Loading...</div>
+    <div v-if="isLoading" class="p-4 text-2xl font-semibold text-center text-gray-600">Loading...</div>
+    <div v-if="isError" class="p-4 text-2xl font-semibold text-center text-gray-600">Error get data</div>
   </Modal>
 </template>
 
