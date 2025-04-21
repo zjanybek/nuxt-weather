@@ -124,6 +124,7 @@ const {
 })
 
 const clearSearch = () => {
+  search.value = ''
   debouncedSearch.value = ''
   isOpenResults.value = false
 }
